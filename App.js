@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Haha from './Haha';
+import ReactNativeBiometrics from 'react-native-biometrics'
 
+// const { biometryType } = ReactNativeBiometrics.isSensorAvailable()
+ 
+ 
 export default function App() {
+  console.log(ReactNativeBiometrics)
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hello Weird World!</Text>
       <StatusBar style="auto" />
+      <Haha />
     </View>
   );
 }
